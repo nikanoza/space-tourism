@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header, Menu } from "components";
+import { useState } from "react";
+import { lazy } from "react";
+import { Navigate, Route, Routes } from "react-router";
+import classes from "./app.module.scss";
+
+const Home = lazy(() => import("./pages/Home/Home"));
 
 function App() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      <Header setShowMenu={setShowMenu} />
+      {showMenu ? <Menu setShowMenu={setShowMenu} /> : null}
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
     </div>
   );
 }

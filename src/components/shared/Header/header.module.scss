@@ -1,10 +1,104 @@
-.header{
-    position: absolute;
-    width: 100%;
-    top: 24px;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
+.header {
+  position: absolute;
+  width: 100%;
+  top: 24px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  .line {
+    width: 40%;
+    height: 1px;
+    background-color: var(--light);
+    opacity: 0.25;
+    margin-left: auto;
+    margin-right: -30px;
+    z-index: 3;
+    display: none;
+  }
+  .menu-ds {
+    display: none;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    justify-content: center;
+    height: 96px;
+    padding: 0 48px;
+    .nav {
+      display: flex;
+      column-gap: 37px;
+      align-items: center;
+      list-style: none;
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 16.8px;
+          letter-spacing: 2.36px;
+          font-family: "Barlow Condensed", sans-serif;
+          text-transform: uppercase;
+          color: var(--light);
+          margin-top: auto;
+          display: flex;
+          .numeric {
+            color: var(--light);
+            display: none;
+            margin-right: 11px;
+          }
+        }
+        div {
+          width: 100%;
+          height: 3px;
+          border-bottom: 3px solid transparent;
+          margin-top: auto;
+        }
+        .active {
+          border-color: var(--light);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+    padding-left: 40px;
+    top: 0;
+    .menu-mb {
+      display: none;
+    }
+    .menu-ds {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding-left: 55px;
+    top: 40px;
+    .line {
+      display: block;
+    }
+    .menu-ds {
+      padding: 0 165px 0 123px;
+      .nav {
+        li {
+          a {
+            font-size: 16px;
+            line-height: 19.2px;
+            letter-spacing: 2.7px;
+            .numeric {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }

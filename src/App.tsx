@@ -9,6 +9,8 @@ const Destination = lazy(() => import("./pages/Destination/Destination"));
 
 const Moon = lazy(() => import("./pages/Destination/components/Moon"));
 const Mars = lazy(() => import("./pages/Destination/components/Mars"));
+const Europa = lazy(() => import("./pages/Destination/components/Europa"));
+const Titan = lazy(() => import("./pages/Destination/components/Titan"));
 
 function App() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -42,6 +44,8 @@ function App() {
           <Route path="" element={<Navigate to="moon" />} />
           <Route path="moon" element={<Moon />} />
           <Route path="mars" element={<Mars />} />
+          <Route path="europa" element={<Europa />} />
+          <Route path="titan" element={<Titan />} />
         </Route>
       </Routes>
     </div>

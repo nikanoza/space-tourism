@@ -32,3 +32,25 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .navbar {
+    margin-top: 53px;
+    .navbar-item {
+      a {
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+      }
+      div {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    margin-top: 98px;
+  }
+}

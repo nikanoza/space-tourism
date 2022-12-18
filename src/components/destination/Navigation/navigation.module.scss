@@ -1,0 +1,34 @@
+.navbar {
+  margin-top: 26px;
+  height: 28px;
+  display: flex;
+  list-style: none;
+  column-gap: 26px;
+  align-items: center;
+  .navbar-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 16.8px;
+      letter-spacing: 2.36px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      color: var(--middle);
+    }
+    .activeLink {
+      color: var(--light);
+    }
+    div {
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      margin-top: 8px;
+    }
+    .active {
+      background-color: var(--light);
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding-bottom: 81px;
+  .title {
+    margin-top: 88px;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    color: var(--light);
+    span {
+      opacity: 0.25;
+      margin-right: 18px;
+    }
+  }
+  .wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .landscape {
+      width: 100%;
+    }
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 16px;
+      margin-top: 34px;
+      list-style: none;
+      .pagination-item {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 18.34px;
+        letter-spacing: 1px;
+      }
+    }
+    .texts {
+      margin-top: 26px;
+      .info {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+        color: var(--middle);
+        font-family: "Barlow Condensed", sans-serif;
+      }
+      .name {
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27.5px;
+        color: var(--light);
+        margin-top: 9px;
+        font-family: "Bellefair", serif;
+      }
+      .description {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: var(--middle);
+        margin-top: 16px;
+        width: 327px;
+        font-family: "Barlow", sans-serif;
+      }
+    }
+    .portrait {
+      display: none;
+    }
+  }
+}

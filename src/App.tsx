@@ -7,6 +7,7 @@ import classes from "./app.module.scss";
 const Home = lazy(() => import("./pages/Home/Home"));
 const Destination = lazy(() => import("./pages/Destination/Destination"));
 const Crew = lazy(() => import("./pages/Crew/Crew"));
+const Technology = lazy(() => import("./pages/Technology"));
 
 const Moon = lazy(() => import("./pages/Destination/components/Moon"));
 const Mars = lazy(() => import("./pages/Destination/components/Mars"));
@@ -53,6 +54,14 @@ function App() {
           element={
             <React.Suspense>
               <Crew />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/technology"
+          element={
+            <React.Suspense>
+              <Technology />
             </React.Suspense>
           }
         />

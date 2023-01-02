@@ -48,6 +48,7 @@
         font-size: 16px;
         line-height: 18.34px;
         letter-spacing: 1px;
+        cursor: pointer;
       }
     }
     .texts {
@@ -83,6 +84,112 @@
     }
     .portrait {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
+    padding-bottom: 97px;
+    .title {
+      margin-top: 136px;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 3.38px;
+      align-self: flex-start;
+      margin-left: 40px;
+      span {
+        margin-right: 16px;
+      }
+    }
+    .wrapper {
+      margin-top: 60px;
+      .pagination {
+        margin-top: 56px;
+        .pagination-item {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+          line-height: 27.5px;
+          letter-spacing: 1.5px;
+        }
+      }
+      .texts {
+        margin-top: 44px;
+        .info {
+          font-size: 16px;
+          line-height: 19.2px;
+          letter-spacing: 2.7px;
+        }
+        .name {
+          font-size: 40px;
+          line-height: 45.8px;
+          margin-top: 16px;
+        }
+        .description {
+          font-size: 16px;
+          line-height: 28px;
+          width: 458px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    padding-bottom: 101px;
+    .title {
+      margin-top: 212px;
+      font-size: 28px;
+      line-height: 33.6px;
+      letter-spacing: 4.72px;
+      margin-left: 166px;
+      span {
+        margin-right: 24px;
+      }
+    }
+    .wrapper {
+      margin-top: 26px;
+      flex-direction: row;
+      .landscape {
+        display: none;
+      }
+      .pagination {
+        flex-direction: column;
+        row-gap: 32px;
+        margin-left: 165px;
+        .pagination-item {
+          width: 80px;
+          height: 80px;
+          font-size: 32px;
+          line-height: 36.67px;
+          letter-spacing: 2px;
+        }
+      }
+      .texts {
+        margin-left: 80px;
+        .info {
+          text-align: left;
+        }
+        .name {
+          font-size: 56px;
+          line-height: 64.18px;
+          text-align: left;
+        }
+        .description {
+          text-align: left;
+          font-size: 18px;
+          line-height: 32px;
+          width: 444px;
+        }
+      }
+      .portrait {
+        display: block;
+        margin-left: 130px;
+      }
     }
   }
 }
